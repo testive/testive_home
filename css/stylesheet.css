@@ -1,1 +1,39 @@
+/* flexbox mixins */
 /* styles for home page */
+.testive-home {
+  color: #2c3e50;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px; }
+
+.home-nav {
+  background-color: #2c3e50;
+  padding: 25px 50px; }
+  .home-nav .home-nav-links {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    @incluide flex-direction(row);
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -moz-justify-content: space-between;
+    justify-content: space-between; }
+  .home-nav .home-testive-logo {
+    width: 150px; }
+  .home-nav .home-nav-link {
+    color: #ffffff;
+    margin-left: 25px; }
+    .home-nav .home-nav-link:hover {
+      color: #29abe2; }
+  .home-nav .home-nav-link:nth-of-type(2) {
+    border: solid 2px #f7931e;
+    border-radius: 5px;
+    color: #f7931e;
+    padding: 15px; }
+    .home-nav .home-nav-link:nth-of-type(2):hover {
+      color: #29abe2;
+      border: solid 2px #29abe2; }
