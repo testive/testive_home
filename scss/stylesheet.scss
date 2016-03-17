@@ -70,7 +70,7 @@
         border: solid 2px #f7931e;
         border-radius: 5px;
         color: #f7931e;
-        padding: 15px;
+        padding: 10px 15px;
         &:hover {
             color: #29abe2;
             border: solid 2px #29abe2;
@@ -93,5 +93,52 @@
     .home-bold-subheader {
         color: #f7931e;
         font-weight: 700;
+    }
+}
+
+.home-motivation-section {
+    @include flex;
+    @include flex-direction(column);
+    padding: 50px;
+    .home-motivation-header {
+        border-bottom: 2px solid #eaeaea;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 25px;
+        padding-bottom: 10px;
+    }
+    .home-motivation-content {
+        @include flex;
+        @include flex-align-items(center);
+        @include flex-direction(row);
+    }
+    .home-motivation-placeholder {
+        background-color: #2c3e50;
+        height: 323px;
+        width: 570px;
+        margin-right: 3%;
+        max-width: 49%;
+    }
+    .home-motivation-copy {
+        @include flex;
+        @include flex-direction(column);
+        text-align: center;
+        max-width: 45%;
+    }
+    .home-motivation-copy-header {
+        border-bottom: 2px solid #eaeaea;
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+    }
+    .home-motivation-copy-subheader {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .home-motivation-copy-endheader {
+        font-size: 14px;
     }
 }
