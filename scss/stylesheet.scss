@@ -112,6 +112,7 @@
         @include flex;
         @include flex-align-items(center);
         @include flex-direction(row);
+        @include flex-justify-content(center);
     }
     .home-motivation-placeholder {
         background-color: #2c3e50;
@@ -122,24 +123,22 @@
     }
     .home-motivation-copy {
         @include flex;
+        @include flex-align-items(center);
         @include flex-direction(column);
+        @include flex-justify-content(center);
         text-align: center;
         max-width: 48%;
     }
     .home-motivation-copy-header {
-        border-bottom: 2px solid #eaeaea;
-        font-size: 18px;
-        font-weight: 300;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        font-size: 16px;
         margin-bottom: 15px;
+        max-width: 438px;
         padding-bottom: 15px;
     }
     .home-motivation-copy-subheader {
         font-size: 24px;
         font-weight: 700;
-        margin-bottom: 5px;
-    }
-    .home-motivation-copy-endheader {
-        font-size: 14px;
     }
 }
 
