@@ -65,8 +65,8 @@
   padding: 100px; }
   .home-hero .home-hero-header {
     color: #ffffff;
-    font-size: 40px;
-    max-width: 800px;
+    font-size: 42px;
+    max-width: 600px;
     text-align: center; }
   .home-hero .home-bold-subheader {
     color: #f7931e;
@@ -84,11 +84,13 @@
   padding: 50px; }
   .home-motivation-section .home-motivation-header {
     border-bottom: 2px solid #eaeaea;
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 700;
     text-align: center;
     margin-bottom: 25px;
     padding-bottom: 10px; }
+  .home-motivation-section .home-motivation-header-bold {
+    color: #29abe2; }
   .home-motivation-section .home-motivation-content {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -131,14 +133,17 @@
     justify-content: center;
     text-align: center;
     max-width: 48%; }
-  .home-motivation-section .home-motivation-copy-header {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-    font-size: 16px;
+  .home-motivation-section .home-motivation-copy-testimonial-bold {
+    font-size: 25px;
+    font-weight: 700;
     margin-bottom: 15px;
-    max-width: 438px;
-    padding-bottom: 15px; }
-  .home-motivation-section .home-motivation-copy-subheader {
-    font-size: 24px;
+    max-width: 445px; }
+  .home-motivation-section .home-motivation-copy-testimonial {
+    font-size: 15px;
+    margin-bottom: 15px;
+    max-width: 435px; }
+  .home-motivation-section .home-motivation-copy-tagline {
+    font-size: 16px;
     font-weight: 700; }
 
 .home-resources-section {
