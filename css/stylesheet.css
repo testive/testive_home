@@ -163,7 +163,7 @@
     font-size: 26px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     padding-bottom: 10px; }
   .home-resources-section .home-resources-content-row {
     display: -ms-flexbox;
@@ -191,24 +191,33 @@
     -ms-flex-direction: column;
     -moz-flex-direction: column;
     flex-direction: column;
-    margin: 0 30px; }
+    -webkit-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    justify-content: flex-end;
+    margin: 0 4.5%; }
   .home-resources-section .home-resources-icon-ebook {
     margin-bottom: 20px;
     width: 76px; }
   .home-resources-section .home-resources-icon-webinar {
     margin-bottom: 20px;
     width: 150px; }
-  .home-resources-section .home-resources-icon-prc {
-    margin-bottom: 27px;
+  .home-resources-section .home-resources-icon-article {
+    margin-bottom: 20px;
     width: 85px; }
-  .home-resources-section .home-resources-icon-blog {
-    margin-bottom: 25px;
-    margin-top: 20px;
-    width: 125px; }
   .home-resources-section .home-resources-content-header {
-    border-bottom: solid 1px rgba(255, 255, 255, 0.5);
     color: #ffffff;
-    font-size: 18px; }
-    .home-resources-section .home-resources-content-header:hover {
-      border-bottom: solid 1px #29abe2;
-      color: #29abe2; }
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px; }
+  .home-resources-section .home-resources-content-button {
+    border: solid 2px #29abe2;
+    border-radius: 5px;
+    color: #29abe2;
+    font-weight: 700;
+    padding: 5px 15px; }
+    .home-resources-section .home-resources-content-button:hover {
+      background-color: #f7931e;
+      border: solid 2px #f7931e;
+      color: #ffffff; }
+
