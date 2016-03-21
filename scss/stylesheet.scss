@@ -204,6 +204,64 @@
             border: solid 2px #f7931e;
             color: #ffffff;
         }
+    }
+}
+
+.home-problem-solver-section {
+        @include flex;
+        @include flex-direction(column);
+        padding: 50px;
+    .home-problem-solver-header {
+        border-bottom: 2px solid #eaeaea;
+        font-size: 26px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-bottom: 10px;
+    }
+    .home-problem-solver-wigdets {
+        @include flex;
+        @include flex-direction(row);
+        @include flex-justify-content(center);
 
     }
+    .home-problem-solver-card {
+        @include flex;
+        @include flex-direction(column);
+        border: 1px solid #eaeaea;
+        box-shadow: 0px 0px 10px 1px #eaeaea;
+        margin: 0 20px;
+        padding: 30px;
+        max-width: 300px;
+    }
+    .home-problem-solver-card-header {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .home-problem-solver-card-header-bold {
+        color: #f7931e;
+    }
+    .home-problem-solver-card-text {
+        font-size: 19px;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+    .home-problem-solver-card-button {
+        background-color: #f7931e;
+        border: solid 2px #f7931e;
+        border-radius: 5px;
+        color: #ffffff;
+        font-weight: 700;
+        margin: 0 auto;
+        padding: 5px 25px;
+        text-align: center;
+        &:hover {
+            background-color: #29abe2;
+            border: solid 2px #29abe2;
+        }
+
+    }
+
 }
