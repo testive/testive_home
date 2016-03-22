@@ -288,3 +288,31 @@
     .home-problem-solver-section .home-problem-solver-card-button:hover {
       background-color: #29abe2;
       border: solid 2px #29abe2; }
+
+.home-footer {
+  background-color: #2c3e50;
+  padding: 50px; }
+  .home-footer .home-news-icons-header {
+    color: #F7931E;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center; }
+  .home-footer .home-news-icons-row {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-align-items: center;
+    -moz-align-items: center;
+    align-items: center;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center; }
+  .home-footer .home-news-icons {
+    padding: 25px 25px 50px 25px; }
