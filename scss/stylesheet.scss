@@ -278,8 +278,83 @@
         @include flex-align-items(center);
         @include flex-direction(row);
         @include flex-justify-content(center);
+        border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+        margin-bottom: 35px;
     }
     .home-news-icons {
-         padding: 25px 25px 50px 25px;
+         padding: 25px;
+    }
+    .home-contact-us-row {
+        color: #ffffff;
+        @include flex;
+        @include flex-align-items(flex-end);
+        @include flex-direction(row);
+        @include flex-justify-content(center);
+        border-bottom: solid 2px rgba(255, 255, 255, 0.2);
+        margin-bottom: 45px;
+        padding-bottom: 45px;
+    }
+    .home-contact-us-words {
+        @include flex;
+        @include flex-direction(column);
+        margin-right: 5%;
+        width: 30%;
+    }
+    .home-contact-us-blurb {
+        color: #F7931E;
+        font-size: 52px;
+        font-weight: 700;
+        &:nth-of-type(2) {
+            font-size: 30px;
+        }
+    }
+    .home-contact-us-options {
+        @include flex;
+        @include flex-direction(column);
+        width: 30%;
+    }
+    .home-contact-us-mainline {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .home-contact-us-button {
+        background-color: #F7931E;
+        border-radius: 5px;
+        color: #ffffff;
+        padding: 10px;
+        text-align: center;
+        width: 70%;
+        &:first-of-type {
+            margin-bottom: 10px;
+        }
+        &:hover {
+            background-color: #29abe2;
+        }
+    }
+    .home-sitemap {
+        @include flex;
+        @include flex-direction(row);
+        @include flex-justify-content(center);
+    }
+    .home-site-map-column {
+        @include flex;
+        @include flex-direction(column);
+        margin-right: 6%;
+        &:last-of-type {
+            margin-right: 0;
+        }
+    }
+    .home-site-map-header {
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 15px;
+    }
+    .home-site-map-link {
+        color: rgba(255, 255, 255, 0.3);
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+    .home-site-map-social-media {}
+    .home-site-map-social-media-link {
+        color: #ffffff;
     }
 }
