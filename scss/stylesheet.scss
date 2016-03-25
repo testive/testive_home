@@ -297,8 +297,8 @@
     .home-contact-us-words {
         @include flex;
         @include flex-direction(column);
-        margin-right: 5%;
-        width: 30%;
+        margin-right: 10%;
+        width: 25%;
     }
     .home-contact-us-blurb {
         color: #F7931E;
@@ -311,7 +311,8 @@
     .home-contact-us-options {
         @include flex;
         @include flex-direction(column);
-        width: 30%;
+        @include flex-align-items(center);
+        width: 23%;
     }
     .home-contact-us-mainline {
         font-size: 24px;
@@ -323,7 +324,7 @@
         color: #ffffff;
         padding: 10px;
         text-align: center;
-        width: 70%;
+        width: 100%;
         &:first-of-type {
             margin-bottom: 10px;
         }
@@ -352,9 +353,19 @@
         color: rgba(255, 255, 255, 0.3);
         font-size: 14px;
         margin-bottom: 5px;
+        &:hover {
+            color: #ffffff;
+        }
     }
-    .home-site-map-social-media {}
+    .home-site-map-social-media {
+        @include flex;
+        @include flex-direction(row);
+        @include flex-align-items(center);
+    }
     .home-site-map-social-media-link {
-        color: #ffffff;
+        padding: 7px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
     }
 }
