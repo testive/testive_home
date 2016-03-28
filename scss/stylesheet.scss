@@ -35,6 +35,13 @@
     justify-content: $direction;
 }
 
+@mixin flex-wrap($wrap: wrap) {
+    -webkit-flex-wrap: $wrap;
+    -ms-flex-wrap: $wrap;
+    -moz-flex-wrap: $wrap;
+    flex-wrap: $wrap;
+}
+
 /* styles for home page */
 
 .testive-home {
@@ -266,7 +273,7 @@
 
 .home-footer {
     background-color: #2c3e50;
-    padding: 50px;
+    padding: 50px 4%;
     .home-news-icons-header {
         color: #F7931E;
         font-size: 22px;
@@ -284,6 +291,21 @@
     .home-news-icons {
          padding: 25px;
     }
+    .home-news-icons-mit {
+        width: 50px;
+    }
+    .home-news-icons-boston-globe {
+        width: 200px;
+    }
+    .home-news-icons-fast-company {
+        width: 150px;
+    }
+    .home-news-icons-npr {
+        width: 75px;
+    }
+    .home-news-icons-wsj {
+        width: 200px;
+    }
     .home-contact-us-row {
         color: #ffffff;
         @include flex;
@@ -296,9 +318,10 @@
     }
     .home-contact-us-words {
         @include flex;
+        @include flex-align-items(flex-end);
         @include flex-direction(column);
         margin-right: 10%;
-        width: 25%;
+        width: 45%;
     }
     .home-contact-us-blurb {
         color: #F7931E;
@@ -311,8 +334,8 @@
     .home-contact-us-options {
         @include flex;
         @include flex-direction(column);
-        @include flex-align-items(center);
-        width: 23%;
+        @include flex-align-items(flex-start);
+        width: 45%;
     }
     .home-contact-us-mainline {
         font-size: 24px;
@@ -324,7 +347,7 @@
         color: #ffffff;
         padding: 10px;
         text-align: center;
-        width: 100%;
+        width: 252px;
         &:first-of-type {
             margin-bottom: 10px;
         }
@@ -366,6 +389,87 @@
         padding: 7px;
         &:hover {
             background-color: rgba(255, 255, 255, 0.3);
+        }
+    }
+}
+
+
+@media only screen and (max-width: 858px) {
+    .home-footer {
+        .home-news-icons-mit {
+            width: 30px;
+        }
+        .home-news-icons-boston-globe {
+            width: 150px;
+        }
+        .home-news-icons-fast-company {
+            display: none;
+        }
+        .home-news-icons-npr {
+            width: 55px;
+        }
+        .home-news-icons-wsj {
+            width: 150px;
+        }
+    }
+}
+
+@media only screen and (max-width: 701px) {
+    .home-footer {
+        .home-contact-us-blurb {
+            font-size: 42px;
+            &:nth-of-type(2) {font-size:30px;}
+        }
+        .home-contact-us-mainline {
+            font-size: 20px;
+        }
+        .home-contact-us-button {
+            width: 200px;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .home-footer {
+        padding: 20px 4%;
+        .home-news-icons-header {
+            display: none;
+        }
+        .home-news-icons-row {
+            display: none;
+        }
+        .home-contact-us-row {
+            @include flex-direction(column);
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+        .home-contact-us-words {
+            @include flex-align-items(center);
+            margin-bottom: 10px;
+            margin-right: 0;
+            width: 100%;
+        }
+        .home-contact-us-options {
+            @include flex-align-items(center);
+            width: 100%;
+        }
+        .home-sitemap {
+            @include flex-justify-content(flex-start);
+            @include flex-wrap(wrap);
+            margin-left: 15%;
+        }
+        .home-site-map-column {
+            margin-bottom: 20px;
+            margin-right: 30px;
+            &:nth-of-type(3) {
+                margin-right: 15px;
+            }
+        }
+        .home-site-map-header {
+            margin-bottom: 5px;
+        }
+        .home-site-map-social-media {
+            display: none;
         }
     }
 }
