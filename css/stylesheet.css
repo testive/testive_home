@@ -40,7 +40,8 @@
     width: 150px; }
   .home-nav .home-nav-link {
     color: #ffffff;
-    margin-left: 25px; }
+    margin-left: 25px;
+    transition-duration: 0.5s; }
     .home-nav .home-nav-link:hover {
       color: #29abe2; }
   .home-nav .home-nav-link:last-of-type {
@@ -49,7 +50,8 @@
     border-radius: 5px;
     color: #2c3e50;
     font-weight: 700;
-    padding: 10px 15px; }
+    padding: 10px 15px;
+    transition-duration: 0.5s; }
     .home-nav .home-nav-link:last-of-type:hover {
       background-color: #2c3e50;
       color: #f7931e; }
@@ -221,7 +223,8 @@
     border-radius: 5px;
     color: #29abe2;
     font-weight: 700;
-    padding: 5px 15px; }
+    padding: 5px 15px;
+    transition-duration: 0.5s; }
     .home-resources-section .home-resources-content-button:hover {
       background-color: #f7931e;
       border: solid 2px #f7931e;
@@ -290,7 +293,8 @@
     font-weight: 700;
     margin: 0 auto;
     padding: 5px 25px;
-    text-align: center; }
+    text-align: center;
+    transition-duration: 0.5s; }
     .home-problem-solver-section .home-problem-solver-card-button:hover {
       background-color: #29abe2;
       border: solid 2px #29abe2; }
@@ -400,6 +404,7 @@
     color: #ffffff;
     padding: 10px;
     text-align: center;
+    transition-duration: 0.5s;
     width: 245px; }
     .home-footer .home-contact-us-button:first-of-type {
       margin-bottom: 10px; }
@@ -436,7 +441,8 @@
   .home-footer .home-site-map-link {
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    transition-duration: 0.5s; }
     .home-footer .home-site-map-link:hover {
       color: #ffffff; }
   .home-footer .home-site-map-social-media {
@@ -453,7 +459,8 @@
     -moz-align-items: center;
     align-items: center; }
   .home-footer .home-site-map-social-media-link {
-    padding: 7px; }
+    padding: 7px;
+    transition-duration: 0.5s; }
     .home-footer .home-site-map-social-media-link:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
