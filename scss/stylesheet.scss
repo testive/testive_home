@@ -59,9 +59,10 @@
     padding: 25px 50px;
     .home-nav-links {
         @include flex;
-        @incluide flex-direction(row);
+        @include flex-direction(row);
         @include flex-align-items(center);
         @include flex-justify-content(space-between);
+        font-size: 14px;
     }
     .home-testive-logo {
         width: 150px;
@@ -73,14 +74,16 @@
             color: #29abe2;
         }
     }
-    .home-nav-link:nth-of-type(2) {
+    .home-nav-link:last-of-type {
+        background-color: #f7931e;
         border: solid 2px #f7931e;
         border-radius: 5px;
-        color: #f7931e;
+        color: #2c3e50;
+        font-weight: 700;
         padding: 10px 15px;
         &:hover {
-            color: #29abe2;
-            border: solid 2px #29abe2;
+            background-color: #2c3e50;
+            color: #f7931e;
         }
     }
 }
@@ -343,16 +346,17 @@
     }
     .home-contact-us-button {
         background-color: #F7931E;
+        border: solid 2px #F7931E;
         border-radius: 5px;
         color: #ffffff;
         padding: 10px;
         text-align: center;
-        width: 252px;
+        width: 245px;
         &:first-of-type {
             margin-bottom: 10px;
         }
         &:hover {
-            background-color: #29abe2;
+            background-color: #2c3e50;
         }
     }
     .home-sitemap {
@@ -395,26 +399,31 @@
 
 
 @media only screen and (max-width: 858px) {
-    .home-footer {
-        .home-news-icons-mit {
-            width: 30px;
-        }
-        .home-news-icons-boston-globe {
-            width: 150px;
-        }
-        .home-news-icons-fast-company {
-            display: none;
-        }
-        .home-news-icons-npr {
-            width: 55px;
-        }
-        .home-news-icons-wsj {
-            width: 150px;
+    .testive-home {
+        .home-footer {
+            .home-news-icons-mit {
+                width: 30px;
+            }
+            .home-news-icons-boston-globe {
+                width: 150px;
+            }
+            .home-news-icons-fast-company {
+                display: none;
+            }
+            .home-news-icons-npr {
+                width: 55px;
+            }
+            .home-news-icons-wsj {
+                width: 150px;
+            }
         }
     }
 }
 
-@media only screen and (max-width: 701px) {
+@media only screen and (max-width: 709px) {
+    .home-hero {
+        padding: 50px;
+    }
     .home-footer {
         .home-contact-us-blurb {
             font-size: 42px;
@@ -430,6 +439,11 @@
 }
 
 @media only screen and (max-width: 600px) {
+    .home-hero {
+        .home-hero-header {
+            font-size: 30px;
+        }
+    }
     .home-footer {
         padding: 20px 4%;
         .home-news-icons-header {
