@@ -63,21 +63,61 @@
 
         <section class="home-problem-solver-section">
             <h2 class="home-problem-solver-header">Let&rsquo;s play a game called <span class="home-problem-solver-card-header-bold">&ldquo;The Problem with Test Prep&rdquo;</span></h2>
-            <div class="home-problem-solver-wigdets">
-                <div class="home-problem-solver-card">
-                    <h4 class="home-problem-solver-card-header">Problem:</h4>
-                    <p class="home-problem-solver-card-text">Traditional tutors and classes are expensive.</p>
-                    <a href="#" class="home-problem-solver-card-button" alt="solve">Solve</a>
+            <div class="home-problem-solver-widget-container">
+                <div class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;Test prep isn&rsquo;t really in my budget. I don&rsquo;t think I can afford a coach.&rdquo;</p>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
                 </div>
-                <div class="home-problem-solver-card">
-                    <h4 class="home-problem-solver-card-header">Problem:</h4>
-                    <p class="home-problem-solver-card-text">Commercial test prep doesn&rsquo;t usually work.</p>
-                    <a href="#" class="home-problem-solver-card-button" alt="solve">Solve</a>
+                <div class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;My son already did a prep course and his score didn&rsquo;t improve.&rdquo;</p>
+                        <button class="home-card-button-front" onclick="flip(event)" alt="solution">Solution</button>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
                 </div>
-                <div class="home-problem-solver-card">
-                    <h4 class="home-problem-solver-card-header">Problem:</h4>
-                    <p class="home-problem-solver-card-text">Technology can&rsquo;t be better than an in-person tutor.</p>
-                    <a href="#" class="home-problem-solver-card-button" alt="solve">Solve</a>
+                <div id="flipped" class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;I&rsquo;m too busy to fit test prep into my schedule.&rdquo;</p>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
+                </div>
+                <div id="flipped" class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;I need to prep for both the SAT and ACT.&ldquo;</p>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
+                </div>
+                <div id="flipped" class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;Studying for the SAT is really, really boring.&rdquo;</p>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
+                </div>
+                <div id="flipped" class="home-problem-solver-widget">
+                    <div class="home-problem-solver-card home-card-front">
+                        <p class="home-problem-solver-card-text">&ldquo;Private in-person tutoring is the best way to get the most personalized experience.&rdquo;</p>
+                    </div>
+                    <div class="home-problem-solver-card home-card-back">
+                        <p class="home-problem-solver-card-text">Testive will solve all of your problems.</p>
+                        <a href="#" class="home-card-button-back" alt="solution">Go</a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -147,6 +187,14 @@
                 </div>
             </div>
         </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+    <script>
+        function flip(event) {
+            $(event.target).parent().parent().toggleClass('flipped')
+        }
+    </script>
+
 
     </body>
 
