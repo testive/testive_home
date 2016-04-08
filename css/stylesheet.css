@@ -538,9 +538,18 @@
     -moz-flex-direction: column;
     flex-direction: column; }
   .home-motivation-section .home-motivation-placeholder {
+    margin-bottom: 10px;
+    margin-right: 0;
     max-width: 100%; }
   .home-motivation-section .home-motivation-copy {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .home-motivation-section .home-motivation-copy-testimonial-bold {
+    font-size: 18px;
+    margin-bottom: 10px;
+    max-width: 500px; }
+  .home-motivation-section .home-motivation-copy-testimonial {
+    margin-bottom: 10px;
+    max-width: 500px; } }
 @media only screen and (max-width: 709px) {
   .home-hero {
     padding: 50px; }

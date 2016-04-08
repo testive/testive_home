@@ -496,10 +496,21 @@
              @include flex-direction(column);
         }
         .home-motivation-placeholder {
+            margin-bottom: 10px;
+            margin-right: 0;
             max-width: 100%;
         }
         .home-motivation-copy {
             max-width: 100%;
+        }
+        .home-motivation-copy-testimonial-bold {
+            font-size: 18px;
+            margin-bottom: 10px;
+            max-width: 500px;
+        }
+        .home-motivation-copy-testimonial {
+            margin-bottom: 10px;
+            max-width: 500px;
         }
     }
 }
