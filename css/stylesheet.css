@@ -203,7 +203,8 @@
     -ms-justify-content: flex-end;
     -moz-justify-content: flex-end;
     justify-content: flex-end;
-    margin: 0 4.5%; }
+    margin: 0 2%;
+    width: 265px; }
   .home-resources-section .home-resources-icon-ebook {
     margin-bottom: 20px;
     width: 76px; }
@@ -503,17 +504,43 @@
     .home-footer .home-site-map-social-media-link:hover {
       background-color: rgba(255, 255, 255, 0.3); }
 
+@media only screen and (max-width: 994px) {
+  .home-motivation-section {
+    padding: 50px 30px; }
+    .home-motivation-section .home-motivation-copy-testimonial-bold {
+      font-size: 22px; }
+
+  .home-resources-section {
+    padding: 50px 30px; }
+    .home-resources-section .home-resources-content-header {
+      font-size: 16px; }
+
+  .home-problem-solver-section {
+    padding: 50px 30px; } }
 @media only screen and (max-width: 858px) {
-  .testive-home .home-footer .home-news-icons-mit {
-    width: 30px; }
-  .testive-home .home-footer .home-news-icons-boston-globe {
+  .home-resources-section .home-resources-content-header {
     width: 150px; }
-  .testive-home .home-footer .home-news-icons-fast-company {
+
+  .home-footer .home-news-icons-mit {
+    width: 30px; }
+  .home-footer .home-news-icons-boston-globe {
+    width: 150px; }
+  .home-footer .home-news-icons-fast-company {
     display: none; }
-  .testive-home .home-footer .home-news-icons-npr {
+  .home-footer .home-news-icons-npr {
     width: 55px; }
-  .testive-home .home-footer .home-news-icons-wsj {
+  .home-footer .home-news-icons-wsj {
     width: 150px; } }
+@media only screen and (max-width: 832px) {
+  .home-motivation-section .home-motivation-content {
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column; }
+  .home-motivation-section .home-motivation-placeholder {
+    max-width: 100%; }
+  .home-motivation-section .home-motivation-copy {
+    max-width: 100%; } }
 @media only screen and (max-width: 709px) {
   .home-hero {
     padding: 50px; }
@@ -527,8 +554,44 @@
   .home-footer .home-contact-us-button {
     width: 200px; } }
 @media only screen and (max-width: 600px) {
-  .home-hero .home-hero-header {
-    font-size: 30px; }
+  .home-hero {
+    padding: 20px 4%; }
+    .home-hero .home-hero-header {
+      font-size: 30px;
+      width: 425px; }
+
+  .home-motivation-section {
+    padding: 20px 4%; }
+
+  .home-resources-section {
+    padding: 20px 4%; }
+    .home-resources-section .home-resources-header {
+      margin-bottom: 20px; }
+    .home-resources-section .home-resources-content-row {
+      -webkit-align-items: center;
+      -ms-align-items: center;
+      -moz-align-items: center;
+      align-items: center;
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      -moz-flex-direction: column;
+      flex-direction: column; }
+    .home-resources-section .home-resources-content {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      margin-bottom: 20px;
+      padding-bottom: 20px; }
+    .home-resources-section .home-resources-content:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0; }
+    .home-resources-section .home-resources-content-header {
+      width: 100%; }
+    .home-resources-section .home-resources-icon-ebook {
+      width: 66px; }
+    .home-resources-section .home-resources-icon-webinar {
+      width: 135px; }
+    .home-resources-section .home-resources-icon-article {
+      width: 65px; }
 
   .home-footer {
     padding: 20px 4%; }
