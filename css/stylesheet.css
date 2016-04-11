@@ -248,6 +248,8 @@
     text-align: center;
     margin-bottom: 40px;
     padding-bottom: 10px; }
+  .home-problem-solver-section .home-problem-solver-header-bold {
+    color: #f7931e; }
   .home-problem-solver-section .home-problem-solver-widget-container {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -304,8 +306,6 @@
     z-index: 0; }
   .home-problem-solver-section .home-problem-solver-widget.flipped {
     transform: rotateY(180deg); }
-  .home-problem-solver-section .home-problem-solver-card-header-bold {
-    color: #f7931e; }
   .home-problem-solver-section .home-problem-solver-card-text {
     font-size: 18px;
     margin-bottom: 25px;
@@ -538,7 +538,7 @@
     -moz-flex-direction: column;
     flex-direction: column; }
   .home-motivation-section .home-motivation-placeholder {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-right: 0;
     max-width: 100%; }
   .home-motivation-section .home-motivation-copy {
@@ -553,6 +553,14 @@
 @media only screen and (max-width: 709px) {
   .home-hero {
     padding: 50px; }
+    .home-hero .home-hero-header {
+      font-size: 35px; }
+
+  .home-motivation-section .home-motivation-header {
+    font-size: 24px; }
+
+  .home-problem-solver-section .home-problem-solver-header {
+    font-size: 22px; }
 
   .home-footer .home-contact-us-blurb {
     font-size: 42px; }
@@ -567,10 +575,18 @@
     padding: 20px 4%; }
     .home-hero .home-hero-header {
       font-size: 30px;
-      width: 425px; }
+      max-width: 425px; }
 
   .home-motivation-section {
     padding: 20px 4%; }
+    .home-motivation-section .home-motivation-header {
+      border: none;
+      font-size: 26px;
+      margin: 0 auto;
+      max-width: 260px;
+      padding-bottom: 20px; }
+    .home-motivation-section .home-motivation-header-bold {
+      display: block; }
 
   .home-resources-section {
     padding: 20px 4%; }
@@ -601,6 +617,17 @@
       width: 135px; }
     .home-resources-section .home-resources-icon-article {
       width: 65px; }
+
+  .home-problem-solver-section {
+    padding: 20px 4%; }
+    .home-problem-solver-section .home-problem-solver-header {
+      border: none;
+      font-size: 26px;
+      margin: 0 auto;
+      max-width: 350px;
+      padding-bottom: 20px; }
+    .home-problem-solver-section .home-problem-solver-header-bold {
+      display: block; }
 
   .home-footer {
     padding: 20px 4%; }
@@ -648,3 +675,15 @@
       margin-bottom: 5px; }
     .home-footer .home-site-map-social-media {
       display: none; } }
+@media only screen and (max-width: 400px) {
+  .home-hero .home-hero-header {
+    font-size: 22px; }
+
+  .home-motivation-section .home-motivation-header {
+    font-size: 22px; }
+
+  .home-resources-section .home-resources-header {
+    font-size: 22px; }
+
+  .home-problem-solver-section .home-problem-solver-header {
+    font-size: 22px; } }
