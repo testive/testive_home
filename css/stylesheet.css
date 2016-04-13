@@ -318,7 +318,11 @@
     font-size: 20px;
     font-weight: 700;
     text-align: center; }
-  .home-problem-solver-section .home-problem-solver-card-text {
+  .home-problem-solver-section .home-problem-solver-card-header-back {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center; }
+  .home-problem-solver-section .home-problem-solver-card-text-front {
     font-size: 16px;
     text-align: center; }
   .home-problem-solver-section .home-card-button-front {
@@ -337,8 +341,8 @@
       background-color: #29abe2;
       border: solid 2px #29abe2; }
   .home-problem-solver-section .home-card-button-back {
-    background-color: #29abe2;
-    border: solid 2px #ffffff;
+    background-color: #2c3e50;
+    border: solid 2px #2c3e50;
     border-radius: 5px;
     color: #ffffff;
     font-weight: 700;
@@ -347,8 +351,23 @@
     text-align: center;
     transition-duration: 0.5s; }
     .home-problem-solver-section .home-card-button-back:hover {
-      background-color: #2c3e50;
-      border: solid 2px #2c3e50; }
+      background-color: #29abe2;
+      border: solid 2px #2c3e50;
+      color: #2c3e50; }
+  .home-problem-solver-section .home-problem-solver-card-header-back {
+    color: #2c3e50;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center; }
+  .home-problem-solver-section .home-problem-solver-card-text-back {
+    font-size: 16px;
+    text-align: center; }
+  .home-problem-solver-section .home-problem-solver-card-text-back-quote {
+    font-size: 14px;
+    font-style: italic;
+    margin: 0 auto;
+    text-align: center;
+    width: 230px; }
 
 .home-footer {
   background-color: #2c3e50;
