@@ -277,6 +277,7 @@
     .home-card-front {
         background-color: #ffffff;
         z-index: 1;
+         transform:rotateX(deg);
     }
     .home-card-back {
         background-color: #29abe2;
