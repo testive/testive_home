@@ -247,14 +247,40 @@
         perspective: 1000px;
         perspective-origin: 50% 40%;
     }
-    .home-problem-solver-widget {
+    .widget {
         height: 252px;
         margin: 10px;
         position: relative;
-        transform-style: preserve-3d;
+        width: 302px;
+    }
+    .safari-home-problem-solver-widget {
+        height: 252px;
+        margin: 10px;
+        position: relative;
         width: 302px;
         transition: all 2s;
-
+        .home-card-front, .home-card-back {
+            transform: none;
+            transition: all 2s;
+        }
+        .home-card-front {
+            opacity: 1;
+            @include flex;
+        }
+        .home-card-back {
+            opacity: 0;
+            display:none
+        }
+    }
+    .safari-home-problem-solver-widget.flipped {
+        .home-card-front {
+            opacity: 0;
+            display:none;
+        }
+        .home-card-back {
+            opacity: 1;
+            @include flex;
+        }
     }
     .home-problem-solver-card {
         @include flex;
@@ -264,6 +290,20 @@
         border-radius: 5px;
         box-shadow: 0px 0px 10px 1px #eaeaea;
         padding: 25px;
+    }
+    .home-problem-solver-widget {
+        height: 252px;
+        margin: 10px;
+        position: relative;
+        transform-style: preserve-3d;
+        width: 302px;
+        transition: all 2s;
+        .home-card-front {
+            transform: rotateX(deg);
+        }
+        .home-card-back {
+            transform: rotateY(-180deg);
+        }
     }
     .home-card-front, .home-card-back {
         animation-delay: .3s;
@@ -277,12 +317,10 @@
     .home-card-front {
         background-color: #ffffff;
         z-index: 1;
-         transform:rotateX(deg);
     }
     .home-card-back {
         background-color: #29abe2;
         color: #ffffff;
-        transform: rotateY(-180deg);
         z-index: 0;
     }
     .home-problem-solver-widget.flipped {
