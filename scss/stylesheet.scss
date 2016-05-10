@@ -179,6 +179,9 @@
         @include flex;
         @include flex-direction(row);
         @include flex-justify-content(center);
+        border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 40px;
+        padding-bottom: 30px;
     }
     .home-resources-content {
         @include flex;
@@ -217,6 +220,39 @@
             background-color: #f7931e;
             border: solid 2px #f7931e;
             color: #ffffff;
+        }
+    }
+    .home-email-cta {
+        @include flex;
+        @include flex-align-items(flex-end);
+        @include flex-direction(row);
+        @include flex-justify-content(center);
+        color: #ffffff;
+
+    }
+    .home-email-cta-blurb-paragraph {
+        margin-right: 5%;
+
+    }
+    .home-email-blurb-line{
+        &:first-of-type {
+            color: #29abe2;
+            font-size: 42px;
+            font-weight: 700;
+            padding-bottom: 5px;
+        }
+    }
+    .home-email-input-title {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
+    .home-dummy-input {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 15px;
+        width: 200px;
+        &:first-of-type {
+            margin-bottom: 10px;
         }
     }
 }

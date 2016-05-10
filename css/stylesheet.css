@@ -185,7 +185,10 @@
     -webkit-justify-content: center;
     -ms-justify-content: center;
     -moz-justify-content: center;
-    justify-content: center; }
+    justify-content: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    margin-bottom: 40px;
+    padding-bottom: 30px; }
   .home-resources-section .home-resources-content {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -230,6 +233,41 @@
       background-color: #f7931e;
       border: solid 2px #f7931e;
       color: #ffffff; }
+  .home-resources-section .home-email-cta {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: flex;
+    -webkit-align-items: flex-end;
+    -ms-align-items: flex-end;
+    -moz-align-items: flex-end;
+    align-items: flex-end;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -moz-flex-direction: row;
+    flex-direction: row;
+    -webkit-justify-content: center;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    color: #ffffff; }
+  .home-resources-section .home-email-cta-blurb-paragraph {
+    margin-right: 5%; }
+  .home-resources-section .home-email-blurb-line:first-of-type {
+    color: #29abe2;
+    font-size: 42px;
+    font-weight: 700;
+    padding-bottom: 5px; }
+  .home-resources-section .home-email-input-title {
+    font-size: 12px;
+    padding-bottom: 5px; }
+  .home-resources-section .home-dummy-input {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 15px;
+    width: 200px; }
+    .home-resources-section .home-dummy-input:first-of-type {
+      margin-bottom: 10px; }
 
 .home-problem-solver-section {
   display: -ms-flexbox;
